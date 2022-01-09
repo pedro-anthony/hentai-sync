@@ -1,0 +1,6 @@
+{
+    "client_id": "reddit app id",
+    "client_secret": "reddit app secret",
+    "user_agent": "user agent for PRAW",
+    "folder_id": "google drive folder ID"
+}

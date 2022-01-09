@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+# Drive authentication secrets
+user_credentials.json
+client_secrets.json
+config.json
+
 # Distribution / packaging
 .Python
 build/

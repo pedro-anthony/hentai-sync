@@ -6,6 +6,8 @@ import praw
 import shutil
 import requests
 from colorama import Fore
+import random
+from datetime import datetime
 
 #clear the screen
 os.system('cls' if os.name == 'nt' else 'clear')
@@ -33,7 +35,22 @@ gauth.SaveCredentialsFile("user_credentials.json")
 
 drive = GoogleDrive(gauth)
 
+# Find the newest image in the folder
+def random_file():
+    """This is so unefficient, I hate myself for writing it. It just works though"""
+    # Get today's date
+    today = datetime.now()
+    today = today.strftime("%Y-%m-%d")
+    # Get the newest file
+    file_list = drive.ListFile({'q': "'" + config['folder_id'] + "' in parents and trashed=False"}).GetList()
+    for file in file_list:
+        if file['createdDate'][:10] == today:
+            return file['createdDate'][:10]
+
+
 print('Authention Successful.') 
+
+print('The last job was run at ' + random_file())
 
 reddit = praw.Reddit(
     client_id=config['client_id'],

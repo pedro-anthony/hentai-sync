@@ -1,12 +1,13 @@
-import os
 import json
-from pydrive.auth import GoogleAuth
-from pydrive.drive import GoogleDrive
-import praw
+import os
+import random
 import shutil
+
+import praw
 import requests
 from colorama import Fore
-import random
+from pydrive.auth import GoogleAuth
+from pydrive.drive import GoogleDrive
 
 #clear the screen
 os.system('cls' if os.name == 'nt' else 'clear')

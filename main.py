@@ -2,6 +2,7 @@ import json
 import os
 import random
 import shutil
+import subprocess
 
 import praw
 import requests
@@ -9,8 +10,8 @@ from colorama import Fore
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 
-# clear the screen
-os.system("cls" if os.name == "nt" else "clear")
+# Clear the screen
+subprocess.call("cls" if os.name == "nt" else "clear", shell=False)
 
 # Open configuration file and parse the data
 with open("config.json") as data_file:

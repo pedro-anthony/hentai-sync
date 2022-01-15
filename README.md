@@ -1,7 +1,5 @@
-# Hentai Sync
-Exposition dump: made this dum-dum tool to shamelessly grab images from any image-based subreddit (i.e porn) and dump everything to a personal Google Drive folder.
-
-# How-to:
+# Hentai Sync [![CodeFactor](https://www.codefactor.io/repository/github/pedro-anthony/hentai-sync/badge/main)](https://www.codefactor.io/repository/github/pedro-anthony/hentai-sync/overview/main)
+Shamelessly grab images from any image-based subreddit (i.e porn) and dump everything to a personal Google Drive folder.
 
 ## Setup
  - Login to [Google Cloud Console](https://console.cloud.google.com/)
@@ -14,4 +12,4 @@ Exposition dump: made this dum-dum tool to shamelessly grab images from any imag
 - Create a new application, script type
 - Create a "config.json" file, based on the example with your new Reddit application's secrets.
 - Run the program, a local webserver window serving the login page will open, promptly follow the on-screen instructions.
-- Enjoy!
+
